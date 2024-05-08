@@ -138,4 +138,24 @@ resetBtn.onclick = function(){
     countLabel.textContent = count;
 }
 
+<label id="countLabel">0</label><br><br>
+    <div id="btnContainer">
+        <button id="decreaseBtn" class="buttons">Decrease</button>
+        <button id="resetBtn" class="buttons">Reset</button>
+        <button id="increaseBtn" class="buttons">Increase</button>
+    </div>
 
+
+// Number Generator
+// random.js
+let randomNum = Math.random();
+console.log(randomNum);
+
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+console.log(randomNumber);
+
+// Another alternative way
+const min = 50;
+const max = 150;
+let myRandom = Math.floor(Math.random() * (max-min)) + min;
+console.log(myRandom);
