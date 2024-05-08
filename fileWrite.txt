@@ -1,0 +1,141 @@
+/* lecture 1
+console.log('Hello world!');
+console.log('I Love Pizza..');
+
+window.alert('This is an alert!');
+
+document.getElementById("heading").textContent = 'Hello, testing!'; // CHANGING THE TEXT CONTENT
+document.getElementById("paragraph").textContent = 'Def'; // CHANGING THE TEXT CONTENT
+
+*/
+
+// lecture 2
+// variables
+
+// 1. declaration
+// 2. assignment
+
+let x;
+x = 123;
+
+console.log(x);
+
+let age = 25;
+let price = 10.99;
+let gpa = 2.1;
+
+console.log(`You are ${age} years old`);
+console.log(`The price is $${price}`);
+
+let firstName = "Bro";
+console.log(typeof firstName);
+console.log(`Your name is ${firstName}`);
+
+let online = false;
+console.log(`Bro is online: ${online}`);
+
+// Changing the att with heading id
+document.getElementById("heading").textContent = `He is online: ${online}`;
+document.getElementById("paragraph").textContent = `His name is ${firstName} and he is ` + age + ` years old`; 
+
+// lecture 3
+// arithmetic operators
+
+let students = 30;
+
+students++;
+students *= 2;
+students--;
+
+console.log(students);
+
+let result = 1 + 2 + 3 ** 4 - 2;
+console.log(result);
+
+// LECTURE 4
+// Accepting User Input
+
+// 1. Easy way = window prompt
+// 2. Professional way = HTML textbox
+
+let username;
+
+//username = window.prompt("What's your username? ");
+//console.log(`Your username is ${username}`);
+
+document.getElementById("mySubmit").onclick = function(){
+    username = document.getElementById("myText").value;
+    document.getElementById("heading").textContent = "Hello, " + username;
+}
+
+<h1 id="heading">Hello there!</h1>
+    
+<label>Username: </label>
+<input id="myText"><br><br>
+<button id="mySubmit">SUBMIT</button>
+
+// LECTURE 5 TYPE CONVERSION
+let age = window.prompt('How old are you?');
+age = Number(age);
+age+=1;
+
+console.log(`Your age is ${age}`);
+console.log(age, typeof age);
+
+let x;
+let y;
+let z = -1;
+
+x = Number(x);
+y = String(y);
+z = Boolean(z);
+
+console.log(x);
+console.log(y);
+console.log(z);
+
+//LECTURE 6
+const PI = 3.14;
+let radius;
+let circumference;
+
+//radius = window.prompt('Enter the radius of the circle: ');
+//radius = Number(radius);
+
+//circumference = 2 * PI * radius;
+//console.log(`The circumference is ${circumference} cm`);
+
+document.getElementById("mySubmit").onclick = function(){
+    radius = document.getElementById("myText").value;
+    radius = Number(radius);
+    circumference = 2 * PI * radius;
+    document.getElementById("heading").textContent = circumference + "cm";
+}
+
+
+// LECTURE 7
+// BASIC JAVASCRIPT
+// COUNTING PROGRAM
+
+const decreaseBtn = document.getElementById("decreaseBtn");
+const increaseBtn = document.getElementById("increaseBtn");
+const resetBtn = document.getElementById("resetBtn");
+const countLabel = document.getElementById("countLabel");
+
+let count = 0;
+increaseBtn.onclick = function(){
+    count++;
+    countLabel.textContent = count;
+}
+
+decreaseBtn.onclick = function(){
+    count--;
+    countLabel.textContent = count;
+}
+
+resetBtn.onclick = function(){
+    count = 0;
+    countLabel.textContent = count;
+}
+
+
