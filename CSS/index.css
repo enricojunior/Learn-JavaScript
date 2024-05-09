@@ -22,3 +22,10 @@
 .buttons:hover {
     background-color: hsl(214, 100%, 56%);
 }
+
+.newContainer {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-family: Helvetica;
+}
