@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel Testing</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="slide-wrapper">
+        <div class="slide-images">
+            <img src="../image/nature1.png" class="active">
+            <img src="../image/nature2.png">
+            <img src="../image/nature3.png">
+            <div class="dots-container">
+                <div class="dot active" attr='0' onclick="changeImages(this)"></div>
+                <div class="dot" attr='1' onclick="changeImages(this)"></div>
+                <div class="dot" attr='2' onclick="changeImages(this)"></div>
+            </div>
+        </div>
+        <div class="side-btn">
+            <span class="nextBtn">&#10095</span>
+            <span class="prevBtn">&#10094</span>
+        </div>
+        
+    </div>
+    <script src="js.js" type="text/javascript"></script>
+</body>
+</html>
