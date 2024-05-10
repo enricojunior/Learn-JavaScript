@@ -9,9 +9,27 @@
 <body>
     <div class="slide-wrapper">
         <div class="slide-images">
-            <img src="../image/nature1.png" class="active">
-            <img src="../image/nature2.png">
-            <img src="../image/nature3.png">
+            <div class="image-container" id="container-first">
+                <img src="../image/nature1.png" class="active">
+                <div class="text-overlay">
+                    <h2>Text Inside Image</h2>
+                    <p>Sample Text</p>
+                </div>
+            </div>
+            <div class="image-container" id="container-second">
+                <img src="../image/nature2.png">
+                <div class="text-overlay">
+                    <h2>Text Inside Image</h2>
+                    <p>Sample Text</p>
+                </div>
+            </div>
+            <div class="image-container" id="container-third">
+                <img src="../image/nature3.png">
+                <div class="text-overlay">
+                    <h2>Text Inside Image</h2>
+                    <p>Sample Text</p>
+                </div>
+            </div>
             <div class="dots-container">
                 <div class="dot active" attr='0' onclick="changeImages(this)"></div>
                 <div class="dot" attr='1' onclick="changeImages(this)"></div>

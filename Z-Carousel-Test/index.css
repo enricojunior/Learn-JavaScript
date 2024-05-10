@@ -22,9 +22,11 @@ body {
 
 .slide-wrapper .slide-images {
     width: 100%;
+    height: 100%;
     height: calc(100% - 40px);
     position: relative;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .slide-wrapper .slide-images img {
@@ -38,6 +40,34 @@ body {
     top: 0;
     left: -100%;
 }
+
+.slide-images {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.text-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.text-overlay p {
+    font-size: 16px;
+}
+
 
 span.nextBtn, span.prevBtn {
     position: absolute;
