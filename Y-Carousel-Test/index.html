@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel with Divs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slide-wrapper">
+        <div class="slide-images">
+            <div class="image-container active" style="background-image: url('../image/nature1.png');"></div>
+            <div class="image-container" style="background-image: url('../image/nature2.png');"></div>
+            <div class="image-container" style="background-image: url('../image/nature3.png');"></div>
+            <div class="dots-container">
+                <div class="dot active" attr='0' onclick="changeImages(this)"></div>
+                <div class="dot" attr='1' onclick="changeImages(this)"></div>
+                <div class="dot" attr='2' onclick="changeImages(this)"></div>
+            </div>
+        </div>
+        <div class="side-btn">
+            <span class="prevBtn">&#10094;</span>
+            <span class="nextBtn">&#10095;</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
